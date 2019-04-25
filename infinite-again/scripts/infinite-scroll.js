@@ -89,7 +89,13 @@
 		calculateAnchoredItem: function (initialAnchor, delta) {
 			if (delta === 0)
 				return initialAnchor;
-				
+			delta += initialAnchor.offset;
+			var i = initialAnchor.index;
+			var tombstones = 0;
+
+			if (delta < 0) {
+						
+			}
 		},
 		fill: function (start, end) {},
 		getTombstone: function () {},
@@ -98,5 +104,4 @@
 		addItem: function () {},
 		addContent: function () {}
 	}
-
 })(self);
